@@ -1,0 +1,23 @@
+name: 项目发布
+on:
+  push: # 监听调用时机为push事件
+    branches: ["main"] # 监听master分支
+
+jobs:
+  release:
+    runs-on: ubuntu-latest # runs-on 指定job任务运行所需要的虚拟机环境(必填字段)
+    steps:
+      - name: 拉取代码
+        uses: actions/checkout@v4
+
+      - name: 设置 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 更新npmrc
+        run: |
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
+
+      - name: 发布至npm仓库
+        run: npm version minor && npm publish
