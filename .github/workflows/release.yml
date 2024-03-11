@@ -23,7 +23,9 @@ jobs:
 
       - name: 发布至npm仓库
         run: |
+          npm install cnpm -g
           git config --global user.name "robot"
           git config --global user.email "hacxy.97@outlook.com"
           npm version minor && npm publish
           git push
+          cnpm sync oml2d-models
