@@ -9,6 +9,8 @@ jobs:
     steps:
       - name: 拉取代码
         uses: actions/checkout@v4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 设置 Node.js
         uses: actions/setup-node@v4
@@ -20,8 +22,6 @@ jobs:
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
 
       - name: 发布至npm仓库
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "robot"
           git config --global user.email "hacxy.97@outlook.com"
