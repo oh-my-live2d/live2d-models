@@ -20,4 +20,8 @@ jobs:
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > .npmrc
 
       - name: 发布至npm仓库
-        run: npm version minor && npm publish
+        run: |
+          git config --global user.name "robot"
+          git config --global user.email "hacxy.97@outlook.com"
+          npm version minor && npm publish
+          git push origin/main
