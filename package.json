@@ -1,0 +1,12 @@
+{
+  "name": "oml2d-models",
+  "version": "0.0.0",
+  "files": [
+    "models"
+  ],
+  "description": "",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
