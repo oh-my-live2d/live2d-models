@@ -25,5 +25,4 @@ jobs:
         run: |
           git config --global user.name "robot"
           git config --global user.email "hacxy.97@outlook.com"
-          npm version minor && npm publish
-          git push origin/main
+          git push
