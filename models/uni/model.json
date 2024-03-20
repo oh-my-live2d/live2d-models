@@ -1,0 +1,16 @@
+{
+	"type": "Live2D Model Setting",
+	"name": "uni",
+	"model": "uni.moc",
+	"layout": {
+		"width": 1.5,
+		"center_x": 0,
+		"center_y": 0
+	},
+	"textures": [
+		"uni.1024/texture_00.png",
+		"uni.1024/texture_01.png",
+		"uni.1024/texture_02.png",
+		"uni.1024/texture_03.png"
+	]
+}

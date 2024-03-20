@@ -1,0 +1,13 @@
+{
+	"type": "Live2D Model Setting",
+	"name": "xisitina",
+	"model": "xisitina.moc",
+	"textures": [
+		"xisitina.2048/texture_00.png"
+	],
+	"layout":{
+		"center_x":0,
+		"center_y":-0.5,
+		"width":3
+	}
+}
