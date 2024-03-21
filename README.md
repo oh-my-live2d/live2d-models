@@ -6,13 +6,13 @@
 
 本仓库中所有模型均已提交至淘宝镜像源, 所有模型资源请按照如下格式使用:
 
-`https://registry.npmmirror.com/oml2d-model/latest/files/models/{模型文件夹}/{模型的json文件}`
+`https://registry.npmmirror.com/oml2d-models/latest/files/models/{模型文件夹}/{模型的json文件}`
 
 示例:
 
 - Senko_Normals:
 
-  `https://registry.npmmirror.com/oml2d-model/latest/files/models/Senko_Normals/senko.model3.json`
+  `https://registry.npmmirror.com/oml2d-models/latest/files/models/Senko_Normals/senko.model3.json`
 
 ## 快速预览&使用
 
