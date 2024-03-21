@@ -16,7 +16,7 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
-          source: "models/"
+          source: "models"
           target: "/${{secrets.SSH_USERNAME}}/Projects/.oml2d_models_temp/"
           rm: true
           strip_components: 1
